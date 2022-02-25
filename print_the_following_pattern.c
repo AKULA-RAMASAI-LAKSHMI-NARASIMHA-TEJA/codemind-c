@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
+    int n,i,temp;
     scanf("%d",&n);
-    while(n)
+    temp=n;
+    while(temp)
     {
-        for(i=1;i<=n;i++)
+        for(i=n;i>=1;i--)
         {
-            
-            printf("%d",i);
+            printf("%d ",i);
         }
         printf("
 ");
-        n=n-1;
+        temp=temp-1;
     }
 }
