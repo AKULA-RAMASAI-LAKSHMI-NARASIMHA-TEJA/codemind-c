@@ -1,7 +1,7 @@
 #include<stdio.h>
 int fun(int n)
 {
-    int  d,temp=0,c=0,cc=0;
+    int d,c=0,cc=0,temp;
     temp=n;
     while(n)
     {
@@ -10,12 +10,12 @@ int fun(int n)
         {
             return 0;
         }
+        n=n/10;
+        c++;
         if(temp%d==0)
         {
-            c++;
+            cc++;
         }
-        n=n/10;
-        cc++;
     }
     if(c==cc)
     {
@@ -28,9 +28,9 @@ int fun(int n)
 }
 int main()
 {
-    int l,u,i;
-    scanf("%d%d",&l,&u);
-    for(i=l;i<=u;i++)
+    int m,n,i;
+    scanf("%d%d",&m,&n);
+    for(i=m;i<=n;i++)
     {
         if(fun(i))
         {
