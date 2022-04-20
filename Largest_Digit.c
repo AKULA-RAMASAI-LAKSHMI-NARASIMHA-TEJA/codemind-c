@@ -6,12 +6,11 @@ int main()
     while(n)
     {
         d=n%10;
-        if(l<d)
+        if(d>l)
         {
             l=d;
         }
         n=n/10;
     }
     printf("%d",l);
-    return 0;
 }
