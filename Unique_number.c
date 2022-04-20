@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,a[100]={0};
+    int n,arr[100]={0},d;
     scanf("%d",&n);
     while(n)
     {
         d=n%10;
-        if(a[d]==1)
+        if(arr[d]==1)
         {
             break;
         }
         else
         {
-            a[d]=1;
+            arr[d]=1;
         }
         n=n/10;
     }
