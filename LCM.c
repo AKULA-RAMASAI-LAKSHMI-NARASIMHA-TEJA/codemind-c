@@ -1,24 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c=2,lcm=1;
-    scanf("%d%d",&a,&b);
+    int m,n,max;
+    scanf("%d%d",&m,&n);
+    max=(m>n)?m:n;
     while(1)
     {
-        if(a%c==0 && b%c==0)
+        if(max%m==0 && max%n==0)
         {
-            a=a/c;
-            b=b/c;
-            lcm=lcm*c;
-        }
-        else
-        {
-            c++;
-        }
-        if(a<c || b<c)
-        {
+            printf("%d",max);
             break;
         }
+        max++;
     }
-    printf("%d",lcm*a*b);
 }
