@@ -48,5 +48,4 @@ int main()
 	{
 		printf("%d %d",pp,np);
 	}
-	return 0;
 }
