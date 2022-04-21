@@ -1,35 +1,34 @@
 #include<stdio.h>
-int isprime(int num)
+int isprime(int n)
 {
-	int i,fc=0;
-	for(i=1;i<=num;i++)
-	{
-		if(num%i==0)
-		{
-			fc++;	
-		}	
-	}
-	if(fc==2)
-	{
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
-	
+    int i,c=0;
+    for(i=2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            c++;
+        }
+    }
+    if(c==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 int main()
 {
-    int n1,n2,n3,np,sum;
+    int n1,n2,i,tot;
     scanf("%d%d",&n1,&n2);
-    sum=n1+n2;
-    for(np=sum+1;;np++)
+    for(i=1;;i++)
     {
-        if(isprime(np))
+        tot=n1+n2+i;
+        if(isprime(tot))
         {
+            printf("%d",i);
             break;
         }
     }
-    printf("%d",np-sum);
 }
