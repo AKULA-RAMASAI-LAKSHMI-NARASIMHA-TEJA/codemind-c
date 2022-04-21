@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int x,y,i,lcm;
-    scanf("%d%d",&x,&y);
-    for(i=1;i<=x&&i<=y;i++)
+    int n1,n2,i,gcd;
+    scanf("%d%d",&n1,&n2);
+    for(i=1;i<=n1 && i<=n2;i++)
     {
-        if(x%i==0&&y%i==0)
-        lcm=i;
+        if(n1%i==0 && n2%i==0)
+        {
+            gcd=i;
+        }
     }
-    printf("%d",lcm);
-    return 0;
+    printf("%d",gcd);
 }
