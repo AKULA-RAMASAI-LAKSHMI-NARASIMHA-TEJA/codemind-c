@@ -18,8 +18,6 @@ int main()
             break;
         }
     }
-   // printf("%d",n);
-    //printf("%d ",arr[i]);
     if(n-arr[i-1] == arr[i]-n)
     {
         printf("%d %d",arr[i-1],arr[i]);
@@ -28,7 +26,7 @@ int main()
     {
         printf("%d",arr[i]);
     }
-    else //if(n-arr[i-1] < arr[i]-n)
+    else
     {
         printf("%d ",arr[i-1]);
     }
