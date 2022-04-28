@@ -3,13 +3,21 @@ int main()
 {
     int n,i,j;
     scanf("%d",&n);
-    for(i=n;i>=1;i--)
+    for(i=1;i<=n;i++)
     {
-        for(j=1;j<=i;j++)
+        for(j=1;j<=n;j++)
         {
-            printf("%c ",64+i);
+            if(j==1||i==n||j==i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
         printf("
 ");
     }
+    return 0;
 }
